@@ -1,0 +1,198 @@
+body{
+	text-align: center;
+}
+
+
+.keyboard-container{
+	background-color: black;
+	border-radius: 4px;
+	border: 2px solid gray;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.keyboard-column-right{
+	float: right;
+	margin-right: 5px;
+	
+}
+
+.keyboard-column-right a{
+	color: white;
+	text-decoration: none;
+	
+}
+
+.keyboard-column-right a:hover{
+	color: silver;
+}
+
+.keyboard-row-1, .keyboard-row-2, .keyboard-row-3, .keyboard-row-4, .keyboard-row-5{
+	display: inline-flex;
+}
+
+.keyboard-row-2{
+	margin-left: -128px;
+}
+	
+
+.keyboard-row-5{
+	margin-left: -5px;
+	margin-bottom: 60px;
+}
+
+.kbd-key{
+	display: grid;
+	background-color: black;
+	opacity: 0.5;
+	border-radius: 4px;
+	border: 2px solid gray;
+	box-shadow: 2px 2px 2px white; 
+	width: 50px;
+	height: 50px;
+	color: white;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.kbd-key:hover{
+	opacity: 1;	
+}
+
+#game1, #game2, #game3, #game4{
+	background-color: gray;
+}
+
+#backspaced{
+	width: 120px;
+	height: 50px;
+}
+
+#enter{
+	width: 120px;
+	height: 50px;
+}
+
+#lock{
+	width: 120px;
+	height: 50px;
+}
+
+#tab{
+	width: 120px;
+	height: 50px;
+}
+
+#shift{
+	width: 120px;
+	height: 50px;
+}
+
+#spacebar{
+	width: 300px;
+	height: 50px;
+}
+
+#mod{
+	width: 100px;
+	height: 50px;
+}
+
+#up{
+	margin-left: 71px;
+}
+
+#left{
+	margin-left: 15px;
+}
+
+.keyboard-container a, i{
+	align-self:center;	
+}
+
+h1, #pheader, #pfooter{
+	font-family: 'Arial'
+}
+
+#diodeverte{
+	margin-top: -37%;
+	margin-left: 85%;
+}
+
+
+#block{
+	margin-top: -50%;
+}
+
+#power-on-off{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+}
+
+#on-off{
+	margin-top: -50px;
+}
+
+#bcl{
+	background-color: black;
+	width: 120px;
+	height: 50px;
+}
+
+#md{
+	background-color: black;
+	width: 100px;
+	height: 50px;
+}
+
+#adjustmd{
+	margin-top: -50%;
+}
+
+#etr{
+	background-color: black;
+	width: 120px;
+	height: 50px;
+}
+
+#arrowenter{
+	margin-top: -60%;
+}
+
+#penter{
+	margin-top: -20%;
+}
+
+#esc{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+}
+
+#pesc{
+	margin-top: -65%;
+}
+
+#backspc{
+	background-color: black;
+	width: 120px;
+	height: 50px;
+
+}
+
+#bkspc{
+	margin-top: -45%;
+}
+
+#wind{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+}
+
+#wds{
+	margin-top: -50px;
+}
+
+
