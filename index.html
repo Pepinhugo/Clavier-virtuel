@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/keyboard.css">
-    <!-- <link rel="stylesheet" href="assets/css/keyboard-night.css">--><!-- CSS of Dark-mod -->
+    <link rel="stylesheet" href="assets/css/keyboard.css"><!-- CSS of Normal-mod -->
+    <!--<link rel="stylesheet" href="assets/css/keyboard-night.css">--><!-- CSS of Dark-mod -->
     <script src="https://kit.fontawesome.com/9699c064e3.js" crossorigin="anonymous"></script>
     <title>Virtual Keyboard</title>
 </head>
@@ -23,7 +23,7 @@
         <div class="keyboard-container">
 
             <div class="keyboard-power"> 
-                <kbd class="kbd-key"><i class="fas fa-power-off"></i></kbd>
+                <kbd class="kbd-key"><input type="button" name="poweronoff" id="power-on-off"><i class="fas fa-power-off" id="on-off"></i></kbd>
             </div><!-- end of keyboard-power turn on/turn off -->    
 
             <aside class="keyboard-column-right">  
@@ -34,7 +34,7 @@
             </aside><!-- end of aside keyboard-column-right --> 
 
             <div class="keyboard-row-1">
-                <kbd class="kbd-key"><p><strong>ESCAP</strong></p></kbd> 
+                <kbd class="kbd-key"><input type="button" name="esc" id="esc"><p id="pesc"><strong>ESCAP</strong></p></kbd> 
                 <kbd class="kbd-key"><p><strong>1</strong></p></kbd>
                 <kbd class="kbd-key"><p><strong>2</strong></p></kbd>
                 <kbd class="kbd-key"><p><strong>3</strong></p></kbd>
@@ -45,7 +45,7 @@
                 <kbd class="kbd-key"><p><strong>8</strong></p></kbd>
                 <kbd class="kbd-key"><p><strong>9</strong></p></kbd>
                 <kbd class="kbd-key"><p><strong>0</strong></p></kbd>
-                <kbd class="kbd-key" id="backspaced"><i class="fas fa-backspace"></i></kbd>
+                <kbd class="kbd-key" id="backspaced"><input type="button" name="backspc" id="backspc"><i class="fas fa-backspace" id="bkspc"></i></kbd>
             </div><!-- end of keyboard-row-1 --> 
 
             <div class="keyboard-row-2">
@@ -63,7 +63,7 @@
             </div><!-- end of keyboard-row-2 --> 
 
             <div class="keyboard-row-3">
-                <kbd class="kbd-key" id="lock"><img src="assets/img/diodeverte.png" id="diodeverte"><i class="fas fa-lock" id="block"></i></kbd>
+                <kbd class="kbd-key" id="lock"><input type="button" name="bcl" id="bcl"><img src="assets/img/diodeverte.png" id="diodeverte"><i class="fas fa-lock" id="block"></i></kbd>
                 <kbd class="kbd-key"id="game2"><p><strong>A</strong></p></kbd>
                 <kbd class="kbd-key"id="game3"><p><strong>S</strong></p></kbd>
                 <kbd class="kbd-key"id="game4"><p><strong>D</strong></p></kbd>
@@ -74,7 +74,7 @@
                 <kbd class="kbd-key"><p><strong>K</strong></p></kbd>
                 <kbd class="kbd-key"><p><strong>L</strong></p></kbd>
                 <kbd class="kbd-key"><p><strong>M</strong></p></kbd>
-                <kbd class="kbd-key" id="enter"><i class="fas fa-arrow-left"></i><strong>ENTER</strong></kbd>
+                <kbd class="kbd-key" id="enter"><input type="button" name="enter" id="etr"><i class="fas fa-arrow-left" id="arrowenter"></i><p id="penter"><strong>ENTER</strong></p></kbd>
             </div><!-- end of keyboard-row-3 --> 
 
             <div class="keyboard-row-4">
@@ -93,11 +93,11 @@
 
             <div class="keyboard-row-5">
                 <kbd class="kbd-key"><p><strong>CTRL</strong></p></kbd> 
-                <kbd class="kbd-key" id="mod"><i class="fas fa-adjust"></i></i></kbd>
+                <kbd class="kbd-key" id="mod"><input type="button" name="mode" id="md"><i class="fas fa-adjust" id="adjustmd"></i></kbd>
                 <kbd class="kbd-key"><p><strong>ALT</strong></p></kbd>
                 <kbd class="kbd-key" id="spacebar"><i class="fas fa-keyboard"></i></kbd>
                 <kbd class="kbd-key"><p><strong>ALT GR</strong></p></kbd>
-                <kbd class="kbd-key"><i class="fab fa-windows"></i></kbd>
+                <kbd class="kbd-key"><input type="button" name="windows" id="wind"><i class="fab fa-windows" id="wds"></i></kbd>
                 <kbd class="kbd-key" id="left"><i class="fas fa-arrow-left"></i></kbd>
                 <kbd class="kbd-key"><i class="fas fa-arrow-down"></i></kbd>
                 <kbd class="kbd-key"><i class="fas fa-arrow-right"></i></kbd>
