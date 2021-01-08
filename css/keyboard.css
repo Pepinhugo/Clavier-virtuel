@@ -4,7 +4,6 @@ body{
 
 
 .keyboard-container{
-	background-color: silver;
 	border-radius: 4px;
 	border: 2px solid black;
 	width: 50%;
@@ -18,13 +17,13 @@ body{
 }
 
 .keyboard-column-right a{
-	color: cyan;
+	color: black;
 	text-decoration: none;
 	
 }
 
 .keyboard-column-right a:hover{
-	color: silver;
+	color: gray;
 }
 
 .keyboard-row-1, .keyboard-row-2, .keyboard-row-3, .keyboard-row-4, .keyboard-row-5{
@@ -43,23 +42,17 @@ body{
 
 .kbd-key{
 	display: grid;
-	background-color: gray;
 	border-radius: 4px;
 	border: 2px solid black;
-	box-shadow: 2px 2px 2px cyan; 
 	width: 50px;
 	height: 50px;
-	color: cyan;
+	color: black;
 	margin-top: 4px;
 	margin-left: 4px;
 }
 
 .kbd-key:hover{
 	opacity: 0.5;	
-}
-
-#game1, #game2, #game3, #game4{
-	background-color: darkcyan;
 }
 
 #backspaced{
@@ -125,7 +118,6 @@ h1, #pheader, #pfooter{
 }
 
 #power-on-off{
-	background-color: gray;
 	width: 50px;
 	height: 50px;
 }
@@ -135,13 +127,11 @@ h1, #pheader, #pfooter{
 }
 
 #bcl{
-	background-color: gray;
 	width: 120px;
 	height: 50px;
 }
 
 #md{
-	background-color: gray;
 	width: 100px;
 	height: 50px;
 }
@@ -151,7 +141,6 @@ h1, #pheader, #pfooter{
 }
 
 #etr{
-	background-color: gray;
 	width: 120px;
 	height: 50px;
 }
@@ -165,7 +154,6 @@ h1, #pheader, #pfooter{
 }
 
 #esc{
-	background-color: gray;
 	width: 50px;
 	height: 50px;
 }
@@ -176,7 +164,6 @@ h1, #pheader, #pfooter{
 }
 
 #backspc{
-	background-color: gray;
 	width: 120px;
 	height: 50px;
 
@@ -187,7 +174,6 @@ h1, #pheader, #pfooter{
 }
 
 #wind{
-	background-color: gray;
 	width: 50px;
 	height: 50px;
 }
