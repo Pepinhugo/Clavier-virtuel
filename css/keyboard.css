@@ -1,15 +1,18 @@
+/* body page */
 body{
 	text-align: center;
 }
 
-
+/* main container */
 .keyboard-container{
 	border-radius: 4px;
 	border: 2px solid black;
 	width: 50%;
 	margin-left: 25%;
+	box-shadow: 3px 3px 3px black;
 }
 
+/* right column links */
 .keyboard-column-right{
 	float: right;
 	margin-right: 5px;
@@ -26,6 +29,8 @@ body{
 	color: gray;
 }
 
+
+/*Keys of main container */
 .keyboard-row-1, .keyboard-row-2, .keyboard-row-3, .keyboard-row-4, .keyboard-row-5{
 	display: inline-flex;
 }
@@ -55,129 +60,189 @@ body{
 	opacity: 0.5;	
 }
 
+
+/* delete key */
 #backspaced{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* enter key */
 #enter{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* lock key */
 #lock{
 	width: 120px;
 	height: 50px;
 }
 
+/* tab key */
 #tab{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* shift key */
 #shift{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* spacebar key */
 #spacebar{
 	width: 300px;
 	height: 50px;
 }
 
+
+/* mod key */
 #mod{
 	width: 100px;
 	height: 50px;
 }
 
+
+/* up arrow */
 #up{
 	margin-left: 71px;
 }
 
+
+/* left arrow */
 #left{
 	margin-left: 15px;
 }
 
+
+/* iframes main container */
 .keyboard-container a, i{
 	align-self:center;
 }
 
+
+/* title */
 h1, #pheader, #pfooter{
 	font-family: 'Arial'
 }
 
 
-#diodeverte{
+/* image caps lock */
+#greenled{
 	margin-top: -37%;
 	margin-left: 85%;
 }
 
 
+/* iframe caps lock */
 #block{
 	margin-top: -50%;
 }
 
+
+/* power key */
 #power-on-off{
 	width: 50px;
 	height: 50px;
 }
 
+/* iframe power key */
 #on-off{
 	margin-top: -50px;
+
 }
 
+/* input caps lock */
 #bcl{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* input switch mod */
 #md{
 	width: 100px;
 	height: 50px;
 }
 
+
+/* iframe mod key */
 #adjustmd{
 	margin-top: -50%;
 }
 
+
+/* input enter key */
 #etr{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* iframe arrow enter */
 #arrowenter{
 	margin-top: -60%;
 }
 
+
+/* text enter key */
 #penter{
 	margin-top: -20%;
 }
 
+
+/* input escap key */
 #esc{
 	width: 50px;
 	height: 50px;
 }
 
+
+/* text escap key */
 #pesc{
 	margin-top: -65%;
 
 }
 
+
+/* input delete key */
 #backspc{
 	width: 120px;
 	height: 50px;
-
 }
 
+
+/* iframe delete key */
 #bkspc{
 	margin-top: -45%;
 }
 
+
+/* input windows key */
 #wind{
 	width: 50px;
 	height: 50px;
 }
 
+/* iframe windows key */
 #wds{
 	margin-top: -50px;
+}
+
+/* area text */
+textarea {
+	margin-top: 20px;
+	margin-bottom: 10px;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
 }

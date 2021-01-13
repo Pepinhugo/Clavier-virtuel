@@ -1,16 +1,21 @@
+/* body page */
 body{
 	text-align: center;
 }
 
 
+/* main container */
 .keyboard-container{
 	background-color: black;
 	border-radius: 4px;
 	border: 2px solid gray;
 	width: 50%;
 	margin-left: 25%;
+	box-shadow: 5px 5px 5px gray;
 }
 
+
+/* right column links */
 .keyboard-column-right{
 	float: right;
 	margin-right: 5px;
@@ -27,6 +32,8 @@ body{
 	color: silver;
 }
 
+
+/*Keys of main container */
 .keyboard-row-1, .keyboard-row-2, .keyboard-row-3, .keyboard-row-4, .keyboard-row-5{
 	display: inline-flex;
 }
@@ -59,140 +66,209 @@ body{
 	opacity: 1;	
 }
 
+
+/* W,A,S,D keys */
 #game1, #game2, #game3, #game4{
 	background-color: gray;
 }
 
+
+/* delete key */
 #backspaced{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* enter key */
 #enter{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* lock key */
 #lock{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* tab key */
 #tab{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* shift key */
 #shift{
 	width: 120px;
 	height: 50px;
 }
 
+
+/* spacebar key */
 #spacebar{
 	width: 300px;
 	height: 50px;
 }
 
+
+/* mod key */
 #mod{
 	width: 100px;
 	height: 50px;
 }
 
+
+/* up arrow */
 #up{
 	margin-left: 71px;
 }
 
+
+/* left arrow */
 #left{
 	margin-left: 15px;
 }
 
+
+/* iframes main container */
 .keyboard-container a, i{
 	align-self:center;	
 }
 
+
+/* title */
 h1, #pheader, #pfooter{
 	font-family: 'Arial'
 }
 
-#diodeverte{
+
+/* image caps lock */
+#greenled{
 	margin-top: -37%;
 	margin-left: 85%;
 }
 
 
+
+/* iframe caps lock */
 #block{
 	margin-top: -50%;
 }
 
+
+/* power key */
 #power-on-off{
 	background-color: black;
 	width: 50px;
 	height: 50px;
 }
 
+
+/* iframe power key */
 #on-off{
 	margin-top: -50px;
 }
 
+
+/* input caps lock */
 #bcl{
 	background-color: black;
 	width: 120px;
 	height: 50px;
 }
 
+
+/* input switch mod */
 #md{
 	background-color: black;
 	width: 100px;
 	height: 50px;
 }
 
+
+/* iframe mod key */
 #adjustmd{
 	margin-top: -50%;
 }
 
+
+/* input enter key */
 #etr{
 	background-color: black;
 	width: 120px;
 	height: 50px;
 }
 
+
+/* iframe arrow enter */
 #arrowenter{
 	margin-top: -60%;
 }
 
+
+/* text enter key */
 #penter{
 	margin-top: -20%;
 }
 
+
+/* input escap key */
 #esc{
 	background-color: black;
 	width: 50px;
 	height: 50px;
 }
 
+
+/* text escap key */
 #pesc{
 	margin-top: -65%;
 }
 
+
+
+/* input delete key */
 #backspc{
 	background-color: black;
 	width: 120px;
 	height: 50px;
-
 }
 
+
+/* iframe delete key */
 #bkspc{
 	margin-top: -45%;
 }
 
+
+/* input windows key */
 #wind{
 	background-color: black;
 	width: 50px;
 	height: 50px;
 }
 
+
+/* iframe windows key */
 #wds{
 	margin-top: -50px;
 }
 
 
+/* area text */
+textarea {
+	background-color: black;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 10px;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 5px gray;
+}
