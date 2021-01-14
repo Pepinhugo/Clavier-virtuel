@@ -14,7 +14,8 @@ body{
 
 /* right column links */
 .keyboard-column-right{
-	float: right;
+	display: inline-flex;
+	margin-left: 92%;
 	margin-right: 5px;
 	
 }
@@ -25,13 +26,20 @@ body{
 }
 
 
+/* left column keys */
+.keyboard-column-left{
+	margin-top: -25%;
+	margin-left: -5%;
+}
+
+
 /*Keys of main container */
 .keyboard-row-1, .keyboard-row-2, .keyboard-row-3, .keyboard-row-4, .keyboard-row-5{
 	display: inline-flex;
 }
 
 .keyboard-row-2{
-	margin-left: -128px;
+	margin-left: -13%;
 }
 	
 
@@ -191,7 +199,7 @@ textarea {
 
 @media screen (min-width: 320px) {
   .keyboard-container{
-   	width: 50%;
+  	width: auto;
    	margin-left: 25%;
   }
 }
