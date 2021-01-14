@@ -23,88 +23,96 @@
 
         <textarea id="story" name="story" rows="10" cols="140"></textarea><!--area text-->
 
+
+
         <div class="keyboard-container">
 
             <div class="keyboard-power"> 
                 <kbd class="kbd-key"><input type="button" name="poweronoff" id="power-on-off"><i class="fas fa-power-off" id="on-off"></i></kbd><!--turn on/off the keyboard-->
             </div><!-- end of keyboard-power turn on/turn off -->    
 
-            <aside class="keyboard-column-right">  
-                <kbd class="kbd-key"><a href="#" target="_blank"><strong>PORT-FOLIO</strong></a></kbd>
-                <kbd class="kbd-key"><a href="https://www.google.com/" target="_blank"><i class="fab fa-google"></i></a></kbd>
-                <kbd class="kbd-key"><a href="https://github.com/Pepinhugo" target="_blank"><i class="fab fa-github"></i></a></kbd>
-                <kbd class="kbd-key"><a href="https://www.linkedin.com/in/hugo-p%C3%A9pin-8454b0166/" target="_blank"><i class="fab fa-linkedin"></i></a></kbd>    
-            </aside><!-- end of aside keyboard-column-right --> 
+            <div class="keyboard-column-right">
+                <aside>  
+                    <kbd class="kbd-key"><a href="#" target="_blank"><strong>PORT-FOLIO</strong></a></kbd>
+                    <kbd class="kbd-key"><a href="https://www.google.com/" target="_blank"><i class="fab fa-google"></i></a></kbd>
+                    <kbd class="kbd-key"><a href="https://github.com/Pepinhugo" target="_blank"><i class="fab fa-github"></i></a></kbd>
+                    <kbd class="kbd-key"><a href="https://www.linkedin.com/in/hugo-p%C3%A9pin-8454b0166/" target="_blank"><i class="fab fa-linkedin"></i></a></kbd>    
+                </aside>
+            </div><!-- end of aside keyboard-column-right -->  
 
-            <div class="keyboard-row-1">
-                <kbd class="kbd-key"><input type="button" name="esc" id="esc"><p id="pesc"><strong>ESCAP</strong></p></kbd><!--return to main mod (normal mod)--> 
-                <kbd class="kbd-key"><p><strong>1</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>2</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>3</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>4</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>5</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>6</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>7</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>8</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>9</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>0</strong></p></kbd>
-                <kbd class="kbd-key" id="backspaced"><input type="button" name="backspc" id="backspc"><i class="fas fa-backspace" id="bkspc"></i></kbd><!--delete text-->
-            </div><!-- end of keyboard-row-1 --> 
+            <div class="keyboard-column-left">
 
-            <div class="keyboard-row-2">
-                <kbd class="kbd-key" id="tab"><i class="fas fa-arrows-alt-h"></i></kbd><!--tab space betwin text/letters-->
-                <kbd class="kbd-key"><p><strong>Q</strong></p></kbd>
-                <kbd class="kbd-key" id="game1"><p><strong>W</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>E</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>R</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>T</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>Y</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>U</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>I</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>O</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>P</strong></p></kbd>
-            </div><!-- end of keyboard-row-2 --> 
+                <div class="keyboard-row-1">
+                    <kbd class="kbd-key"><input type="button" name="esc" id="esc"><p id="pesc"><strong>ESCAP</strong></p></kbd><!--return to main mod (normal mod)--> 
+                    <kbd class="kbd-key"><p><strong>1</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>2</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>3</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>4</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>5</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>6</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>7</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>8</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>9</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>0</strong></p></kbd>
+                    <kbd class="kbd-key" id="backspaced"><input type="button" name="backspc" id="backspc"><i class="fas fa-backspace" id="bkspc"></i></kbd><!--delete text-->
+                </div><!-- end of keyboard-row-1 --> 
 
-            <div class="keyboard-row-3">
-                <kbd class="kbd-key" id="lock"><input type="button" name="bcl" id="bcl"><img src="img/diodeverte.png" class="lockage" id="greenled"><i class="fas fa-lock" id="block"></i></kbd><!--caps lock = green light image on + uppercase letters / caps unlock = green light image off + small letters-->
-                <kbd class="kbd-key" id="game2"><p><strong>A</strong></p></kbd>
-                <kbd class="kbd-key" id="game3"><p><strong>S</strong></p></kbd>
-                <kbd class="kbd-key" id="game4"><p><strong>D</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>F</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>G</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>H</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>J</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>K</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>L</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>M</strong></p></kbd>
-                <kbd class="kbd-key" id="enter"><input type="button" name="enter" id="etr"><i class="fas fa-arrow-left" id="arrowenter"></i><p id="penter"><strong>ENTER</strong></p></kbd><!--enter button-->
-            </div><!-- end of keyboard-row-3 --> 
+                <div class="keyboard-row-2">
+                    <kbd class="kbd-key" id="tab"><i class="fas fa-arrows-alt-h"></i></kbd><!--tab space betwin text/letters-->
+                    <kbd class="kbd-key"><p><strong>Q</strong></p></kbd>
+                    <kbd class="kbd-key" id="game1"><p><strong>W</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>E</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>R</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>T</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>Y</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>U</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>I</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>O</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>P</strong></p></kbd>
+                </div><!-- end of keyboard-row-2 --> 
 
-            <div class="keyboard-row-4">
-                <kbd class="kbd-key" id="shift"><i class="fas fa-arrow-alt-circle-up"></i></kbd>
-                <kbd class="kbd-key"><p><strong>Z</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>X</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>C</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>V</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>B</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>N</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>,</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>.</strong></p></kbd>
-                <kbd class="kbd-key"><p><strong>?</strong></p></kbd>
-                <kbd class="kbd-key" id="up"><i class="fas fa-arrow-up"></i></kbd>
-            </div><!-- end of keyboard-row-4 --> 
+                <div class="keyboard-row-3">
+                    <kbd class="kbd-key" id="lock"><input type="button" name="bcl" id="bcl"><img src="img/diodeverte.png" class="lockage" id="greenled"><i class="fas fa-lock" id="block"></i></kbd><!--caps lock = green light image on + uppercase letters / caps unlock = green light image off + small letters-->
+                    <kbd class="kbd-key" id="game2"><p><strong>A</strong></p></kbd>
+                    <kbd class="kbd-key" id="game3"><p><strong>S</strong></p></kbd>
+                    <kbd class="kbd-key" id="game4"><p><strong>D</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>F</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>G</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>H</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>J</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>K</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>L</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>M</strong></p></kbd>
+                    <kbd class="kbd-key" id="enter"><input type="button" name="enter" id="etr"><i class="fas fa-arrow-left" id="arrowenter"></i><p id="penter"><strong>ENTER</strong></p></kbd><!--enter button-->
+                </div><!-- end of keyboard-row-3 --> 
 
-            <div class="keyboard-row-5">
-                <kbd class="kbd-key"><p><strong>CTRL</strong></p></kbd> 
-                <kbd class="kbd-key" id="mod"><input type="button" name="mode" id="md"><i class="fas fa-adjust" id="adjustmd"></i></kbd><!-- change mod with js-->
-                <kbd class="kbd-key"><p><strong>ALT</strong></p></kbd>
-                <kbd class="kbd-key" id="spacebar"><i class="fas fa-keyboard"></i></kbd>
-                <kbd class="kbd-key"><p><strong>ALT GR</strong></p></kbd>
-                <kbd class="kbd-key"><input type="button" name="windows" id="wind"><i class="fab fa-windows" id="wds"></i></kbd><!--open windows-->
-                <kbd class="kbd-key" id="left"><i class="fas fa-arrow-left"></i></kbd>
-                <kbd class="kbd-key"><i class="fas fa-arrow-down"></i></kbd>
-                <kbd class="kbd-key"><i class="fas fa-arrow-right"></i></kbd>
-            </div><!-- end of keyboard-row-5 --> 
+                <div class="keyboard-row-4">
+                    <kbd class="kbd-key" id="shift"><i class="fas fa-arrow-alt-circle-up"></i></kbd>
+                    <kbd class="kbd-key"><p><strong>Z</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>X</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>C</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>V</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>B</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>N</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>,</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>.</strong></p></kbd>
+                    <kbd class="kbd-key"><p><strong>?</strong></p></kbd>
+                    <kbd class="kbd-key" id="up"><i class="fas fa-arrow-up"></i></kbd>
+                </div><!-- end of keyboard-row-4 --> 
+
+                <div class="keyboard-row-5">
+                    <kbd class="kbd-key"><p><strong>CTRL</strong></p></kbd> 
+                    <kbd class="kbd-key" id="mod"><input type="button" name="mode" id="md"><i class="fas fa-adjust" id="adjustmd"></i></kbd><!-- change mod with js-->
+                    <kbd class="kbd-key"><p><strong>ALT</strong></p></kbd>
+                    <kbd class="kbd-key" id="spacebar"><i class="fas fa-keyboard"></i></kbd>
+                    <kbd class="kbd-key"><p><strong>ALT GR</strong></p></kbd>
+                    <kbd class="kbd-key"><input type="button" name="windows" id="wind"><i class="fab fa-windows" id="wds"></i></kbd><!--open windows-->
+                    <kbd class="kbd-key" id="left"><i class="fas fa-arrow-left"></i></kbd>
+                    <kbd class="kbd-key"><i class="fas fa-arrow-down"></i></kbd>
+                    <kbd class="kbd-key"><i class="fas fa-arrow-right"></i></kbd>
+                </div><!-- end of keyboard-row-5 -->
+
+            </div><!-- end of keyboard-column-left --> 
 
         </div><!-- end of keyboard-container --> 
 
