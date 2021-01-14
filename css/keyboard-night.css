@@ -230,7 +230,7 @@ textarea {
     box-shadow: 5px 5px 5px gray;
 }
 
-@media screen (max-width: 600px) {
+@media screen (min-width: 320px) {
   .keyboard-container{
    	width: 50%;
    	margin-left: 25%;
