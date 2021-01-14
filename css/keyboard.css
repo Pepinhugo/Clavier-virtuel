@@ -9,7 +9,7 @@ body{
 	border: 2px solid black;
 	width: 50%;
 	margin-left: 25%;
-	box-shadow: 3px 3px 3px black;
+	
 }
 
 /* right column links */
@@ -20,13 +20,8 @@ body{
 }
 
 .keyboard-column-right a{
-	color: black;
 	text-decoration: none;
 	
-}
-
-.keyboard-column-right a:hover{
-	color: gray;
 }
 
 
@@ -61,35 +56,8 @@ body{
 }
 
 
-/* delete key */
-#backspaced{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* enter key */
-#enter{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* lock key */
-#lock{
-	width: 120px;
-	height: 50px;
-}
-
-/* tab key */
-#tab{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* shift key */
-#shift{
+/* big keys */
+#backspaced, #enter, #lock, #tab, #shift{
 	width: 120px;
 	height: 50px;
 }
@@ -129,9 +97,15 @@ body{
 
 /* title */
 h1, #pheader, #pfooter{
-	font-family: 'Arial'
+	font-family: 'Arial';
 }
 
+
+/* input enter key + input delete key + input caps lock*/
+#etr, #backspc, #bcl{
+	width: 120px;
+	height: 50px;
+}
 
 /* image caps lock */
 #greenled{
@@ -158,12 +132,6 @@ h1, #pheader, #pfooter{
 
 }
 
-/* input caps lock */
-#bcl{
-	width: 120px;
-	height: 50px;
-}
-
 
 /* input switch mod */
 #md{
@@ -177,12 +145,6 @@ h1, #pheader, #pfooter{
 	margin-top: -50%;
 }
 
-
-/* input enter key */
-#etr{
-	width: 120px;
-	height: 50px;
-}
 
 
 /* iframe arrow enter */
@@ -208,13 +170,6 @@ h1, #pheader, #pfooter{
 #pesc{
 	margin-top: -65%;
 
-}
-
-
-/* input delete key */
-#backspc{
-	width: 120px;
-	height: 50px;
 }
 
 
@@ -244,5 +199,12 @@ textarea {
     line-height: 1.5;
     border-radius: 5px;
     border: 2px solid black;
-    box-shadow: 3px 3px 3px black;
+   
+}
+
+@media screen (max-width: 600px) {
+  .keyboard-container{
+   	width: 50%;
+   	margin-left: 25%;
+  }
 }

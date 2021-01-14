@@ -1,6 +1,7 @@
 /* body page */
 body{
 	text-align: center;
+	background-color: #303030;
 }
 
 
@@ -73,36 +74,8 @@ body{
 }
 
 
-/* delete key */
-#backspaced{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* enter key */
-#enter{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* lock key */
-#lock{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* tab key */
-#tab{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* shift key */
-#shift{
+/* big keys */
+#backspaced, #enter, #lock, #tab, #shift{
 	width: 120px;
 	height: 50px;
 }
@@ -142,7 +115,15 @@ body{
 
 /* title */
 h1, #pheader, #pfooter{
-	font-family: 'Arial'
+	font-family: 'Arial';
+}
+
+
+/* input enter key + input delete key + input caps lock*/
+#etr, #backspc, #bcl{
+	background-color: black;
+	width: 120px;
+	height: 50px;
 }
 
 
@@ -174,13 +155,6 @@ h1, #pheader, #pfooter{
 }
 
 
-/* input caps lock */
-#bcl{
-	background-color: black;
-	width: 120px;
-	height: 50px;
-}
-
 
 /* input switch mod */
 #md{
@@ -193,14 +167,6 @@ h1, #pheader, #pfooter{
 /* iframe mod key */
 #adjustmd{
 	margin-top: -50%;
-}
-
-
-/* input enter key */
-#etr{
-	background-color: black;
-	width: 120px;
-	height: 50px;
 }
 
 
@@ -227,15 +193,6 @@ h1, #pheader, #pfooter{
 /* text escap key */
 #pesc{
 	margin-top: -65%;
-}
-
-
-
-/* input delete key */
-#backspc{
-	background-color: black;
-	width: 120px;
-	height: 50px;
 }
 
 
@@ -271,4 +228,11 @@ textarea {
     border-radius: 5px;
     border: 2px solid gray;
     box-shadow: 5px 5px 5px gray;
+}
+
+@media screen (max-width: 600px) {
+  .keyboard-container{
+   	width: 50%;
+   	margin-left: 25%;
+  }
 }
