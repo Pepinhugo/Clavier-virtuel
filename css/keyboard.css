@@ -55,8 +55,8 @@ body{
 	width: 50px;
 	height: 50px;
 	color: black;
-	margin-top: 4px;
-	margin-left: 4px;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
 .kbd-key:hover{
@@ -84,16 +84,15 @@ body{
 	height: 50px;
 }
 
-
 /* up arrow */
 #up{
-	margin-left: 71px;
+	margin-left: 15px;
 }
 
 
 /* left arrow */
 #left{
-	margin-left: 15px;
+	margin-left: 26px;
 }
 
 

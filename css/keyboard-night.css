@@ -1,6 +1,5 @@
 /* body page */
 body{
-	text-align: center;
 	background-color: #303030;
 }
 
@@ -8,66 +7,31 @@ body{
 /* main container */
 .keyboard-container{
 	background-color: black;
-	border-radius: 4px;
 	border: 2px solid gray;
-	width: 50%;
-	margin-left: 25%;
 	box-shadow: 5px 5px 5px gray;
 }
 
 
 /* right column links */
-.keyboard-column-right{
-	display: inline-flex;
-	margin-left: 92%;
-	margin-right: 5px;
-	
+.keyboard-column-right a{
+	color: white;	
 }
 
-.keyboard-column-right a{
-	color: white;
-	text-decoration: none;
-	
-}
+
 
 .keyboard-column-right a:hover{
 	color: silver;
 }
 
-/* left column keys */
-.keyboard-column-left{
-	margin-top: -25%;
-	margin-left: -5%;
-}
-
-
-/*Keys of main container */
-.keyboard-row-1, .keyboard-row-2, .keyboard-row-3, .keyboard-row-4, .keyboard-row-5{
-	display: inline-flex;
-}
-
-.keyboard-row-2{
-	margin-left: -13%;
-}
-
-.keyboard-row-5{
-	margin-left: -5px;
-	margin-bottom: 60px;
-}
 
 .kbd-key{
-	display: grid;
 	background-color: black;
 	opacity: 0.5;
-	border-radius: 4px;
 	border: 2px solid gray;
 	box-shadow: 2px 2px 2px white; 
-	width: 50px;
-	height: 50px;
 	color: white;
-	margin-top: 5px;
-	margin-left: 5px;
 }
+
 
 .kbd-key:hover{
 	opacity: 1;	
@@ -80,129 +44,22 @@ body{
 }
 
 
-/* big keys */
-#backspaced, #enter, #lock, #tab, #shift{
-	width: 120px;
-	height: 50px;
-}
-
-
-/* spacebar key */
-#spacebar{
-	width: 300px;
-	height: 50px;
-}
-
-
-/* mod key */
-#mod{
-	width: 100px;
-	height: 50px;
-}
-
-
-/* up arrow */
-#up{
-	margin-left: 15px;
-}
-
-
-/* left arrow */
-#left{
-	margin-left: 26px;
-}
-
-
-/* iframes main container */
-.keyboard-container a, i{
-	align-self:center;	
-}
-
-
-/* title */
-h1, #pheader, #pfooter{
-	font-family: 'Arial';
-}
-
-
 /* input enter key + input delete key + input caps lock*/
 #etr, #backspc, #bcl{
 	background-color: black;
-	width: 120px;
-	height: 50px;
-}
 
-
-/* image caps lock */
-#greenled{
-	margin-top: -37%;
-	margin-left: 85%;
-}
-
-
-
-/* iframe caps lock */
-#block{
-	margin-top: -50%;
 }
 
 
 /* input power key + esc + wind */
 #power-on-off, #esc, #wind{
 	background-color: black;
-	width: 50px;
-	height: 50px;
 }
-
-
-/* iframe power key */
-#on-off{
-	margin-top: -50px;
-}
-
 
 
 /* input switch mod */
 #md{
 	background-color: black;
-	width: 100px;
-	height: 50px;
-}
-
-
-/* iframe mod key */
-#adjustmd{
-	margin-top: -50%;
-}
-
-
-/* iframe arrow enter */
-#arrowenter{
-	margin-top: -60%;
-}
-
-
-/* text enter key */
-#penter{
-	margin-top: -20%;
-}
-
-
-/* text escap key */
-#pesc{
-	margin-top: -65%;
-}
-
-
-/* iframe delete key */
-#bkspc{
-	margin-top: -45%;
-}
-
-
-/* iframe windows key */
-#wds{
-	margin-top: -50px;
 }
 
 
@@ -210,19 +67,6 @@ h1, #pheader, #pfooter{
 textarea {
 	background-color: black;
 	color: white;
-	margin-top: 20px;
-	margin-bottom: 10px;
-    font-size: .8rem;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    border-radius: 5px;
     border: 2px solid gray;
     box-shadow: 5px 5px 5px gray;
-}
-
-@media screen (min-width: 320px) {
-  .keyboard-container{
-   	width: auto;
-   	margin-left: 25%;
-  }
 }
