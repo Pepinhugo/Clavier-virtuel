@@ -70,6 +70,11 @@ body{
 	height: 50px;
 }
 
+/* capslock key */
+#lock{
+	margin-left: -6px;	
+	margin-right: 5px;
+}
 
 /* spacebar key */
 #spacebar{
@@ -86,7 +91,7 @@ body{
 
 /* up arrow */
 #up{
-	margin-left: 15px;
+	margin-left: 48px;
 }
 
 
@@ -99,6 +104,7 @@ body{
 /* iframes main container */
 .keyboard-container a, i{
 	align-self:center;
+
 }
 
 
