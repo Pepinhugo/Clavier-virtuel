@@ -1,18 +1,18 @@
-
 //Collect the keys, and match them
-
 window.addEventListener("load", () => {
   const kbdKey = document.querySelectorAll(".kbd-key");
   const story = document.querySelector("#story");
-  const lock = document.querySelector("#lock");
+  const lock = document.querySelector("#bcl");
   const mod = document.querySelector("#adjustmd");
   const power = document.querySelector("#poweronoff");
   const enterKbd = document.querySelector("#enter");
   const space = document.querySelector("#spacebar");
+  const shiftKey = document.querySelector("#shiftKey");
+  const deleteBtn = document.querySelector("#backspc");
+
   let newValue = "";
   let isUpperCase = false;
   let isNightMode = false;
-
 
   // The Story box
   kbdKey.forEach((value) => {
@@ -20,6 +20,21 @@ window.addEventListener("load", () => {
       newValue = event.target.value;
       story.value += newValue;
     });
+  });
+
+  // Enter
+  enterKbd.addEventListener("click", () => {
+    story.value += "\n";
+  });
+
+  // Space
+  space.addEventListener("click", () => {
+    story.value += " ";
+  });
+
+  // Delete
+  deleteBtn.addEventListener("click", () => {
+    story.value = story.value.charAt((story.length = -1));
   });
 
   // The NightMod function
@@ -43,39 +58,24 @@ window.addEventListener("load", () => {
     } 
   });
 
-  // The Letters upperCase or not
+  // The Letters upperCase or lowcase
   lock.addEventListener("click", () => {
     if (!isUpperCase) {
-      lock.value = "min";
+      lock.value = "Locked";
       isUpperCase = true;
-
-      kbdKey.forEach((btn) => {
-        btn.value = btn.value.toUpperCase();
+        kbdKey.forEach((btn) => {
+          btn.value = bcl.value.toUpperCase();
+          
+        
       });
     } else {
-      lock.value = "MAJ";
+      lock.value = "unlocked";
       isUpperCase = false;
-      kbdKey.forEach((btn) => {
-        btn.value = btn.value.toLowerCase();
+        kbdKey.forEach((btn) => {
+          btn.value = bcl.value.toLowerCase();
+        
+         
       });
     }
   });
-
-  /*// Power kbd
-  document.getElementById('poweronoff').addEventListener('click', function() {
-    this.classList.toggle('on');
-    this.classList.toggle('off');
-    });*/
-
-  // Enter kbd
-  enter.addEventListener("click", () => {
-    story.value += "\n";
-  });
-
-  // The spacebar
-  space.addEventListener("click", () => {
-    story.value += " ";
-  });
-
-
 });

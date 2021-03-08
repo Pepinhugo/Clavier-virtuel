@@ -27,7 +27,7 @@
 
         <div class="keyboard-container">
 
-            <div class="keyboard-power"> 
+            <div class="keyboard-power" id="poweronoff"> 
                 <kbd class="kbd-key"><input type="button" name="poweronoff" id="power-on-off"><i class="fas fa-power-off" id="on-off"></i></kbd><!--turn on/off the keyboard-->
             </div><!-- end of keyboard-power turn on/turn off -->    
 
@@ -44,59 +44,60 @@
 
                 <div class="keyboard-row-1">
                     <kbd class="kbd-key"><input type="button" name="esc" id="esc"><p id="pesc"><strong>ESCAP</strong></p></kbd><!--return to main mod (normal mod)--> 
-                    <kbd class="kbd-key"><p><strong>1</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>2</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>3</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>4</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>5</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>6</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>7</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>8</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>9</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>0</strong></p></kbd>
-                    <kbd class="kbd-key" id="backspaced"><input type="button" name="backspc" id="backspc"><i class="fas fa-backspace" id="bkspc"></i></kbd><!--delete text-->
+                    <kbd><input type="button" class="kbd-key" value="1"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="2"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="3"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="4"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="5"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="6"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="7"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="8"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="9"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="0"></kbd>
+                    <kbd id="backspaced"><input type="button" name="backspc" class="kbd-key" id="backspc"><i class="fas fa-backspace" id="bkspc"></i></kbd><!--delete text-->
                 </div><!-- end of keyboard-row-1 --> 
 
                 <div class="keyboard-row-2">
-                    <kbd class="kbd-key" id="tab"><i class="fas fa-arrows-alt-h"></i></kbd><!--tab space betwin text/letters-->
-                    <kbd class="kbd-key"><p><strong>Q</strong></p></kbd>
-                    <kbd class="kbd-key" id="game1"><p><strong>W</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>E</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>R</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>T</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>Y</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>U</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>I</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>O</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>P</strong></p></kbd>
+                    <!--tab space betwin text/letters-->
+                    <kbd class="kbd-key" id="tab"><i class="fas fa-arrows-alt-h"></i></kbd>
+                    <kbd><input type="button" class="kbd-key" value="Q"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="W" id="game1"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="E"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="R"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="T"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="Y"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="U"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="I"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="O"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="P"></kbd>
                 </div><!-- end of keyboard-row-2 --> 
 
                 <div class="keyboard-row-3">
-                    <kbd class="kbd-key" id="lock"><input type="button" name="bcl" id="bcl"><img src="img/diodeverte.png" class="lockage" id="greenled"><i class="fas fa-lock" id="block"></i></kbd><!--caps lock = green light image on + uppercase letters / caps unlock = green light image off + small letters-->
-                    <kbd class="kbd-key" id="game2"><p><strong>A</strong></p></kbd>
-                    <kbd class="kbd-key" id="game3"><p><strong>S</strong></p></kbd>
-                    <kbd class="kbd-key" id="game4"><p><strong>D</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>F</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>G</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>H</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>J</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>K</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>L</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>M</strong></p></kbd>
-                    <kbd class="kbd-key" id="enter"><input type="button" name="enter" id="etr"><i class="fas fa-arrow-left" id="arrowenter"></i><p id="penter"><strong>ENTER</strong></p></kbd><!--enter button-->
+                    <kbd id="lock"><input type="button" name="bcl" id="bcl" class="kbd-key"><img src="img/diodeverte.png" class="lockage" id="greenled"><i class="fas fa-lock" id="block"></i></kbd><!--caps lock = green light image on + uppercase letters / caps unlock = green light image off + small letters-->
+                    <kbd><input type="button" class="kbd-key" value="A" id="game2"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="S" id="game3"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="D" id="game4"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="F"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="G"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="H"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="J"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="K"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="L"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="M"></kbd>
+                    <kbd id="enter"><input type="button" name="enter" id="etr" class="kbd-key"><i class="fas fa-arrow-left" id="arrowenter"></i><p id="penter"><strong>ENTER</strong></p></kbd><!--enter button-->
                 </div><!-- end of keyboard-row-3 --> 
 
                 <div class="keyboard-row-4">
                     <kbd class="kbd-key" id="shift"><i class="fas fa-arrow-alt-circle-up"></i></kbd>
-                    <kbd class="kbd-key"><p><strong>Z</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>X</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>C</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>V</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>B</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>N</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>,</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>.</strong></p></kbd>
-                    <kbd class="kbd-key"><p><strong>?</strong></p></kbd>
+                    <kbd><input type="button" class="kbd-key" value="Z"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="X"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="C"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="V"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="B"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="N"></kbd>
+                    <kbd><input type="button" class="kbd-key" value=","></kbd>
+                    <kbd><input type="button" class="kbd-key" value="."></kbd>
+                    <kbd><input type="button" class="kbd-key" value="?"></kbd>
                     <kbd class="kbd-key" id="up"><i class="fas fa-arrow-up"></i></kbd>
                 </div><!-- end of keyboard-row-4 --> 
 
@@ -104,7 +105,7 @@
                     <kbd class="kbd-key"><p><strong>CTRL</strong></p></kbd> 
                     <kbd class="kbd-key" id="mod"><input type="button" name="mode" id="md"><i class="fas fa-adjust" id="adjustmd"></i></kbd><!-- change mod with js-->
                     <kbd class="kbd-key"><p><strong>ALT</strong></p></kbd>
-                    <kbd class="kbd-key" id="spacebar"><i class="fas fa-keyboard"></i></kbd>
+                    <kbd><input type="button" class="kbd-key" name="spacebar" id="spacebar"><i class="fas fa-keyboard"></i></kbd>
                     <kbd class="kbd-key"><p><strong>ALT GR</strong></p></kbd>
                     <kbd class="kbd-key"><input type="button" name="windows" id="wind"><i class="fab fa-windows" id="wds"></i></kbd><!--open windows-->
                     <kbd class="kbd-key" id="left"><i class="fas fa-arrow-left"></i></kbd>
@@ -121,7 +122,9 @@
     <footer>
         <p class="author-description" id="pfooter"><strong><small>By &copy; Pépin Hugo 2021</small></strong></p>
     </footer><!-- end of footer copyright -->
+    
 
+<script src="js/javascript.js"></script>
 </body>
 
 </html>
