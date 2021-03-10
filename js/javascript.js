@@ -5,9 +5,8 @@ window.addEventListener("load", () => {
   const lock = document.querySelector("#bcl");
   const mod = document.querySelector("#adjustmd");
   const power = document.querySelector("#poweronoff");
-  const enterKbd = document.querySelector("#enter");
+  const enterKey = document.querySelector("#enter");
   const space = document.querySelector("#spacebar");
-  const shiftKey = document.querySelector("#shiftKey");
   const deleteBtn = document.querySelector("#backspc");
 
   let newValue = "";
@@ -23,7 +22,7 @@ window.addEventListener("load", () => {
   });
 
   // Enter
-  enterKbd.addEventListener("click", () => {
+  enterKey.addEventListener("click", () => {
     story.value += "\n";
   });
 
@@ -42,7 +41,7 @@ window.addEventListener("load", () => {
   // Create one event on click
   mod.addEventListener("click", () => {
     if (!isNightMode) {
-      mod.value = "NIGHT-ON";
+      mod.value = "|NIGHTMOD-ON|";
       // Create a new link for add css's nightmod
       let link = document.createElement("link");
       link.rel = "stylesheet";
@@ -52,7 +51,7 @@ window.addEventListener("load", () => {
       isNightMode = true;
     } else {
       isNightMode = false;
-      mod.value = "NIGHT-OFF";
+      mod.value = "|NIGHTMOD-OFF|";
       // Remove the link just created
       document.getElementsByTagName("link")[2].remove();
     } 
@@ -65,16 +64,14 @@ window.addEventListener("load", () => {
       isUpperCase = true;
         kbdKey.forEach((btn) => {
           btn.value = bcl.value.toUpperCase();
-          
-        
+               
       });
     } else {
       lock.value = "unlocked";
       isUpperCase = false;
         kbdKey.forEach((btn) => {
           btn.value = bcl.value.toLowerCase();
-        
-         
+                 
       });
     }
   });
