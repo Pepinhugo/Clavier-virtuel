@@ -65,13 +65,13 @@ body{
 
 
 /* big keys */
-#backspaced, #enter, #lock, #tab, #shift{
+#backspaced, #enter, #capslock, #tab, #shift{
 	width: 120px;
 	height: 50px;
 }
 
 /* capslock key */
-#lock{
+#capslock{
 	margin-left: -6px;	
 	margin-right: 5px;
 }
@@ -115,7 +115,7 @@ h1, #pheader, #pfooter{
 
 
 /* input enter key + input delete key + input caps lock*/
-#etr, #backspc, #bcl{
+#etr, #backspc, #blck{
 	width: 120px;
 	height: 50px;
 }
@@ -127,7 +127,7 @@ h1, #pheader, #pfooter{
 }
 
 
-/* iframe caps lock */
+/* iframe capslock */
 #block{
 	margin-top: -50%;
 }

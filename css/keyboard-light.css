@@ -41,7 +41,7 @@ body{
 
 
 /* input enter key + input delete key + input caps lock*/
-#etr, #backspc, #bcl{
+#etr, #backspc, #blck{
 	background-color: gray;
 }
 

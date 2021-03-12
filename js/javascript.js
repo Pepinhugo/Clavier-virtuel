@@ -2,7 +2,7 @@
 window.addEventListener("load", () => {
   const kbdKey = document.querySelectorAll(".kbd-key");
   const story = document.querySelector("#story");
-  const lock = document.querySelector("#bcl");
+  const capsLock = document.querySelector("#blck");
   const mod = document.querySelector("#adjustmd");
   const power = document.querySelector("#poweronoff");
   const enterKey = document.querySelector("#enter");
@@ -57,20 +57,22 @@ window.addEventListener("load", () => {
     } 
   });
 
-  // The Letters upperCase or lowcase
-  lock.addEventListener("click", () => {
+  // The Letters upperCase or lowerCase with capsLock
+  capsLock.addEventListener("click", () => {
     if (!isUpperCase) {
-      lock.value = "Locked";
+      capsLock.value = "Locked";
       isUpperCase = true;
         kbdKey.forEach((btn) => {
-          btn.value = bcl.value.toUpperCase();
+          btn.value = blck.value.toUpperCase();
+         
                
       });
     } else {
-      lock.value = "unlocked";
+      capsLock.value = "unlocked";
       isUpperCase = false;
         kbdKey.forEach((btn) => {
-          btn.value = bcl.value.toLowerCase();
+          btn.value = blck.value.toLowerCase();
+           
                  
       });
     }
