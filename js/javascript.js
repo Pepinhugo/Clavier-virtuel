@@ -62,16 +62,16 @@ window.addEventListener("load", () => {
     if (!isUpperCase) {
       capsLock.value = "Locked";
       isUpperCase = true;
-        kbdKey.forEach((btn) => {
-          btn.value = blck.value.toUpperCase();
+        kbdKey.forEach((button) => {
+          button.value = blck.value.toUpperCase();
          
                
       });
     } else {
       capsLock.value = "unlocked";
       isUpperCase = false;
-        kbdKey.forEach((btn) => {
-          btn.value = blck.value.toLowerCase();
+        kbdKey.forEach((button) => {
+          button.value = blck.value.toLowerCase();
            
                  
       });
