@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
   let newValue = "";
   let isUpperCase = false;
   let isNightMode = false;
+  let isCapsLock = false;
 
   // The Story box
   kbdKey.forEach((value) => {
@@ -60,7 +61,7 @@ window.addEventListener("load", () => {
   // The Letters upperCase or lowerCase with capsLock
   capsLock.addEventListener("click", () => {
     if (!isUpperCase) {
-      capsLock.value = "Locked";
+      capsLock.value = "upperCase";
       isUpperCase = true;
         kbdKey.forEach((button) => {
           button.value = blck.value.toUpperCase();
@@ -68,7 +69,7 @@ window.addEventListener("load", () => {
                
       });
     } else {
-      capsLock.value = "unlocked";
+      capsLock.value = "lowerCase";
       isUpperCase = false;
         kbdKey.forEach((button) => {
           button.value = blck.value.toLowerCase();
