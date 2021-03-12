@@ -60,11 +60,13 @@ window.addEventListener("load", () => {
 
   // The Letters upperCase or lowerCase with capsLock
   capsLock.addEventListener("click", () => {
+    console.log(event.target);
     if (!isUpperCase) {
       capsLock.value = "upperCase";
       isUpperCase = true;
         kbdKey.forEach((button) => {
-          button.value = blck.value.toUpperCase();
+          console.log(button);
+         button.value = button.value.toUpperCase();
          
                
       });
@@ -72,7 +74,8 @@ window.addEventListener("load", () => {
       capsLock.value = "lowerCase";
       isUpperCase = false;
         kbdKey.forEach((button) => {
-          button.value = blck.value.toLowerCase();
+          console.log(button);
+         button.value = button.value.toLowerCase();
            
                  
       });

@@ -24,7 +24,7 @@ body{
 }
 
 
-.kbd-key{
+.kbd-key, .kbd-key2{
 	background-color: black;
 	opacity: 0.5;
 	border: 2px solid gray;
@@ -33,7 +33,7 @@ body{
 }
 
 
-.kbd-key:hover{
+.kbd-key:hover, .kbd-key2:hover{
 	opacity: 1;	
 }
 

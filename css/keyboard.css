@@ -48,7 +48,7 @@ body{
 	margin-bottom: 60px;
 }
 
-.kbd-key{
+.kbd-key, .kbd-key2{
 	display: grid;
 	border-radius: 4px;
 	border: 2px solid black;
