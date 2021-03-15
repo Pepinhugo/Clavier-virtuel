@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   const power = document.querySelector("#poweronoff");
   const enterKey = document.querySelector("#enter");
   const space = document.querySelector("#spacebar");
-  const deleteBtn = document.querySelector("#backspc");
+  const deleteKey = document.querySelector("#backspc");
 
   let newValue = "";
   let isUpperCase = false;
@@ -33,9 +33,17 @@ window.addEventListener("load", () => {
   });
 
   // Delete
-  deleteBtn.addEventListener("click", () => {
-    story.value = story.value.charAt((story.length = -1));
+  deleteKey.addEventListener("click", () => {
+    story.value = story.value.slice(0,-1);
   });
+
+  // Shift
+
+ /*document.onkeyup = function(e){
+    if (e.shiftkey && e.key == "Q") {
+      el.classlist.add('.kbd-key')
+    }
+  }*/
 
   // The NightMod function
 
@@ -62,7 +70,7 @@ window.addEventListener("load", () => {
   capsLock.addEventListener("click", () => {
     console.log(event.target);
     if (!isUpperCase) {
-      capsLock.value = "upperCase";
+      capsLock.value = "";
       isUpperCase = true;
         kbdKey.forEach((button) => {
           console.log(button);
@@ -71,7 +79,7 @@ window.addEventListener("load", () => {
                
       });
     } else {
-      capsLock.value = "lowerCase";
+      capsLock.value = "";
       isUpperCase = false;
         kbdKey.forEach((button) => {
           console.log(button);
