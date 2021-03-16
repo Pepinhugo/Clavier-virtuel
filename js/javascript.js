@@ -13,6 +13,8 @@ window.addEventListener("load", () => {
   let newValue = "";
   let isUpperCase = false;
   let isNightMode = false;
+  let isCapsLocked = false;
+  let isShift = false;
 
   // The Story box
   kbdKey.forEach((value) => {
@@ -39,6 +41,7 @@ window.addEventListener("load", () => {
 
   // Shift In progress
 /* In progress :
+
   shiftKey.addEventListener("click", () => {
     console.log(event.target);
     if (!isUpperCase) {
@@ -56,7 +59,24 @@ window.addEventListener("load", () => {
         }         
       });
     }
-  });*/
+  });
+
+  or
+
+  shiftKey.addEventListener('click', () => {
+    console.log(event.target);
+        if (isCapsLocked === false) {
+            capsLock.classList.add('focused');
+            kbdKey.forEach((button) => {
+                button.value = button.value.toUpperCase();
+                  console.log(button);
+            });
+            isCapsLocked = true;
+            isShift = true;
+        }
+  }) 
+
+*/
 
   // The NightMod function
 
@@ -86,7 +106,7 @@ window.addEventListener("load", () => {
       capsLock.value = "";
       isUpperCase = true;
         kbdKey.forEach((button) => {
-          console.log(button);
+         // console.log(button);
          button.value = button.value.toUpperCase();
          
                
@@ -95,7 +115,7 @@ window.addEventListener("load", () => {
       capsLock.value = "";
       isUpperCase = false;
         kbdKey.forEach((button) => {
-          console.log(button);
+         // console.log(button);
          button.value = button.value.toLowerCase();
            
                  
