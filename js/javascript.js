@@ -68,8 +68,8 @@ window.addEventListener("load", () => {
         if (isCapsLocked === false) {
             capsLock.classList.add('focused');
             kbdKey.forEach((button) => {
+              console.log(button);
                 button.value = button.value.toUpperCase();
-                  console.log(button);
             });
             isCapsLocked = true;
             isShift = true;
