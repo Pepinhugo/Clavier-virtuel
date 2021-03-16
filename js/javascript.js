@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
   const kbdKey = document.querySelectorAll(".kbd-key");
   const story = document.querySelector("#story");
   const capsLock = document.querySelector("#blck");
+  const shiftKey = document.querySelector('#shift')
   const mod = document.querySelector("#adjustmd");
   const power = document.querySelector("#poweronoff");
   const enterKey = document.querySelector("#enter");
@@ -12,7 +13,6 @@ window.addEventListener("load", () => {
   let newValue = "";
   let isUpperCase = false;
   let isNightMode = false;
-  let isCapsLock = false;
 
   // The Story box
   kbdKey.forEach((value) => {
@@ -37,27 +37,40 @@ window.addEventListener("load", () => {
     story.value = story.value.slice(0,-1);
   });
 
-  // Shift
+  // Shift In progress
+/* In progress :
+  shiftKey.addEventListener("click", () => {
+    console.log(event.target);
+    if (!isUpperCase) {
+      isUpperCase = true;
+        kbdKey.forEach((button) => {
+          console.log(button);
+         button.value = button.value.toUpperCase();
 
- /*document.onkeyup = function(e){
-    if (e.shiftkey && e.key == "Q") {
-      el.classlist.add('.kbd-key')
+       if (!isUpperCase) {
+          isUpperCase = false;
+            kbdKey.forEach((button) => {
+              console.log(button);
+             button.value = button.value.toLowerCase();                    
+          });
+        }         
+      });
     }
-  }*/
+  });*/
 
   // The NightMod function
 
   // Create one event on click
   mod.addEventListener("click", () => {
     if (!isNightMode) {
+      isNightMode = true;
       mod.value = "|NIGHTMOD-ON|";
       // Create a new link for add css's nightmod
       let link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = "css/keyboard-night.css";
       // Check this link at the index[0] in link's HEAD
-      document.getElementsByTagName("HEAD")[0].appendChild(link);
-      isNightMode = true;
+      document.getElementsByTagName("head")[0].appendChild(link);
     } else {
       isNightMode = false;
       mod.value = "|NIGHTMOD-OFF|";

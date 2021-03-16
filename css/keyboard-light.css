@@ -21,7 +21,7 @@ body{
 }
 
 
-.kbd-key, .kbd-key2{
+.kbd-key, .kbd-key2, .kbd-key3{
 	background-color: gray;
 	border: 2px solid black;
 	box-shadow: 2px 2px 2px cyan; 
@@ -29,7 +29,7 @@ body{
 }
 
 
-.kbd-key:hover, .kbd-key2:hover{
+.kbd-key:hover, .kbd-key2:hover, .kbd-key3:hover{
 	opacity: 0.5;	
 }
 
