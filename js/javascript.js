@@ -40,28 +40,7 @@ window.addEventListener("load", () => {
   });
 
   // Shift In progress
-/* In progress :
-
-  shiftKey.addEventListener("click", () => {
-    console.log(event.target);
-    if (!isUpperCase) {
-      isUpperCase = true;
-        kbdKey.forEach((button) => {
-          console.log(button);
-         button.value = button.value.toUpperCase();
-
-       if (!isUpperCase) {
-          isUpperCase = false;
-            kbdKey.forEach((button) => {
-              console.log(button);
-             button.value = button.value.toLowerCase();                    
-          });
-        }         
-      });
-    }
-  });
-
-  or
+/*In progress : */
 
   shiftKey.addEventListener('click', () => {
     console.log(event.target);
@@ -75,8 +54,6 @@ window.addEventListener("load", () => {
             isShift = true;
         }
   }) 
-
-*/
 
   // The NightMod function
 
