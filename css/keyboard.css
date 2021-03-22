@@ -39,7 +39,11 @@ body{
 }
 
 .keyboard-row-2{
-	margin-left: -13%;
+	margin-left: -7%;
+}
+
+.keyboard-row-4{
+	margin-left: 4px;
 }
 	
 
@@ -122,7 +126,8 @@ h1, #pheader, #pfooter{
 
 /* image caps lock */
 #greenled{
-	margin-top: -37%;
+	display: flex;
+	margin-top: -35%;
 	margin-left: 85%;
 }
 
@@ -130,6 +135,7 @@ h1, #pheader, #pfooter{
 /* icon capslock */
 #block{
 	margin-top: -50%;
+	margin-left: 10%;
 	
 }
 
@@ -163,17 +169,18 @@ h1, #pheader, #pfooter{
 
 /* icon arrow enter */
 #arrowenter{
-	margin-top: -60%;
+	z-index: 1;
+	display: flex;
+	margin-top: -20%;
+	margin-left: 47%;
 	
 }
 
 
 /* text enter key */
 #penter{
-	margin-top: -48%;
+	margin-top: -30%;
 	margin-left: 6%;
-
-
 }
 
 
@@ -186,13 +193,41 @@ h1, #pheader, #pfooter{
 
 /* icon delete key */
 #bkspc{
+	display: flex;
 	z-index: 1;
+	margin-left: 45%;
+	margin-top: -27%;
+
+}
+
+/* icon tab */
+#tabul{
+	display: flex;
+	z-index: 1;
+	margin-left: 45%;
+	margin-top: -27%;
 }
 
 /* DeleteAll Key */
 #deleteall{
 	margin-top: -60%;
 	margin-left: 10%;
+}
+
+
+/* Shift */
+#shifticon{
+	display: flex;
+	z-index: 1;
+	margin-left: 45%;
+	margin-top: -27%;
+}
+
+#spaceicon{
+	display: flex;
+	z-index: 1;
+	margin-left: 48%;
+	margin-top: -10%;
 }
 
 
