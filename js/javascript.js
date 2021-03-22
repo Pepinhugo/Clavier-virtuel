@@ -8,7 +8,9 @@ window.addEventListener("load", () => {
   const power = document.querySelector("#poweronoff");
   const enterKey = document.querySelector("#enter");
   const space = document.querySelector("#spacebar");
+  const tabKey = document.querySelector("#tab");
   const deleteKey = document.querySelector("#backspc");
+  const delAll = document.querySelector("#del");
 
   let newValue = "";
   let isUpperCase = false;
@@ -34,15 +36,27 @@ window.addEventListener("load", () => {
     story.value += " ";
   });
 
+  // TabKey
+
+  tabKey.addEventListener("click", () => {
+    story.value += "     ";
+  });
+
   // Delete
   deleteKey.addEventListener("click", () => {
     story.value = story.value.slice(0,-1);
   });
 
-  // Shift In progress
-/*In progress : */
+  // DelAll key
 
-  shiftKey.addEventListener('click', () => {
+  delAll.addEventListener("click", () => {
+    story.value = story.value.charAt((story.length = -1));
+  });
+
+  // Shift In progress
+/* In progress : */
+
+  /*shiftKey.addEventListener('click', () => {
     console.log(event.target);
         if (isCapsLocked === false) {
             capsLock.classList.add('focused');
@@ -53,7 +67,39 @@ window.addEventListener("load", () => {
             isCapsLocked = true;
             isShift = true;
         }
-  }) 
+  }) */
+
+function shift () {
+  shiftKey.forEach((button) => {
+    button.classList.add('focused');
+
+  });
+  if (!isCapsLocked) {
+    if (!isShift) {
+      kbdKey.forEach((button) => {
+        button.value = button.value.toUpperCase();
+      });
+      isShift = false;
+    } else {
+      kbdKey.forEach((button) => {
+        button.value = button.value.toLowerCase();
+      });
+      isShift = true;
+    }
+  } else {    
+      if (!isShift) {
+       kbdKey.forEach((button) => {
+          button.value = button.value.toLowerCase();
+        });
+        isShift = false;
+      } else {
+        kbdKey.forEach((button) => {
+          button.value = button.value.toUpperCase();
+        });
+        isShift = true;
+      }
+  }
+}
 
   // The NightMod function
 

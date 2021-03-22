@@ -190,6 +190,12 @@ h1, #pheader, #pfooter{
 	
 }
 
+/* DeleteAll Key */
+#deleteall{
+	margin-top: -60%;
+	margin-left: 10%;
+}
+
 
 /* iframe windows key */
 #wds{
