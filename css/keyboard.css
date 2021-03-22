@@ -101,7 +101,7 @@ body{
 }
 
 
-/* iframes main container */
+/* icons main container */
 .keyboard-container a, i{
 	align-self:center;
 
@@ -127,7 +127,7 @@ h1, #pheader, #pfooter{
 }
 
 
-/* iframe capslock */
+/* icon capslock */
 #block{
 	margin-top: -50%;
 	
@@ -140,7 +140,7 @@ h1, #pheader, #pfooter{
 	height: 50px;
 }
 
-/* iframe power key */
+/* icon power key */
 #on-off{
 	margin-top: -50px;
 
@@ -154,14 +154,14 @@ h1, #pheader, #pfooter{
 }
 
 
-/* iframe mod key */
+/* icon mod key */
 #adjustmd{
 	margin-top: -50%;
 }
 
 
 
-/* iframe arrow enter */
+/* icon arrow enter */
 #arrowenter{
 	margin-top: -60%;
 	
@@ -184,10 +184,9 @@ h1, #pheader, #pfooter{
 }
 
 
-/* iframe delete key */
+/* icon delete key */
 #bkspc{
-	margin-top: -45%;
-	
+	z-index: 1;
 }
 
 /* DeleteAll Key */
@@ -197,7 +196,7 @@ h1, #pheader, #pfooter{
 }
 
 
-/* iframe windows key */
+/* icon windows key */
 #wds{
 	margin-top: -50px;
 }
