@@ -87,3 +87,9 @@ textarea {
     border: 2px solid gray;
     box-shadow: 5px 5px 5px gray;
 }
+
+@media screen (min-width: 320px) {
+  .keyboard-container{
+  	width: auto;
+   	margin-left: 25%;
+  }

@@ -80,3 +80,9 @@ textarea {
 	background-color: silver;
     box-shadow: 5px 5px 5px darkcyan;
 }
+
+@media screen (min-width: 320px) {
+  .keyboard-container{
+  	width: auto;
+   	margin-left: 25%;
+  }
