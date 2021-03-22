@@ -47,6 +47,7 @@ window.addEventListener("load", () => {
     story.value = story.value.slice(0,-1);
   });
 
+
   // DelAll key
 
   delAll.addEventListener("click", () => {
@@ -68,7 +69,7 @@ window.addEventListener("load", () => {
             isShift = true;
         }
   }) */
-
+/*
 function shift () {
   shiftKey.forEach((button) => {
     button.classList.add('focused');
@@ -99,7 +100,7 @@ function shift () {
         isShift = true;
       }
   }
-}
+}*/
 
   // The NightMod function
 
