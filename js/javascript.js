@@ -37,7 +37,6 @@ window.addEventListener("load", () => {
   });
 
   // TabKey
-
   tabKey.addEventListener("click", () => {
     story.value += "     ";
   });
