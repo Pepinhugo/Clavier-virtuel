@@ -130,6 +130,7 @@ h1, #pheader, #pfooter{
 /* iframe capslock */
 #block{
 	margin-top: -50%;
+	
 }
 
 
@@ -163,12 +164,16 @@ h1, #pheader, #pfooter{
 /* iframe arrow enter */
 #arrowenter{
 	margin-top: -60%;
+	
 }
 
 
 /* text enter key */
 #penter{
-	margin-top: -20%;
+	margin-top: -48%;
+	margin-left: 6%;
+
+
 }
 
 
@@ -182,6 +187,7 @@ h1, #pheader, #pfooter{
 /* iframe delete key */
 #bkspc{
 	margin-top: -45%;
+	
 }
 
 

@@ -10,6 +10,13 @@ body{
 	border: 2px solid black;	
 }
 
+/* iframes main container */
+.keyboard-container a, i{
+	align-self:center;
+	color: cyan;	
+
+}
+
 
 .keyboard-column-right a{
 	color: cyan;
@@ -49,6 +56,11 @@ body{
 /* input power key + esc + wind */
 #power-on-off, #esc, #wind{
 	background-color: gray;
+}
+
+/* text enter key */
+#penter{
+	color: cyan;
 }
 
 

@@ -37,6 +37,13 @@ body{
 	opacity: 1;	
 }
 
+/* iframes main container */
+.keyboard-container a, i{
+	align-self:center;
+	color: white;	
+
+}
+
 
 /* W,A,S,D keys */
 #game1, #game2, #game3, #game4{
@@ -60,6 +67,11 @@ body{
 /* input switch mod */
 #md{
 	background-color: black;
+}
+
+/* text enter key */
+#penter{
+	color: white;
 }
 
 
