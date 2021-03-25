@@ -57,12 +57,19 @@ window.addEventListener("load", () => {
   // Power Key
 
   power.addEventListener("click", () => {
-      if (!isOff) {
-        isOff = true;
-      power.value = "|Keyboard-OFF|";
+    if (!isOff) {
+      isOff = true;
+      power.value = "|KEYBOARD-OFF|";
       document.getElementsByTagName("link")[1].remove();
-      }      
-  });    
+    } else {
+      isOff = false;
+      power.value = "|KEYBOARD-ON|";
+      let link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "css/keyboard-light.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    } 
+  });
 
   // Shift In progress
 /* In progress : */
