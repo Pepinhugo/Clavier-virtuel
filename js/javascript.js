@@ -58,10 +58,10 @@ window.addEventListener("load", () => {
 
   power.addEventListener("click", () => {
       if (!isOff) {
-        isOff = false;
+        isOff = true;
       power.value = "|Keyboard-OFF|";
       document.getElementsByTagName("link")[1].remove();
-      }     
+      }      
   });    
 
   // Shift In progress
