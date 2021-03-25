@@ -17,6 +17,7 @@ window.addEventListener("load", () => {
   let isNightMode = false;
   let isCapsLocked = false;
   let isShift = false;
+  let isOff = false;
 
   // The Story box
   kbdKey.forEach((value) => {
@@ -52,6 +53,16 @@ window.addEventListener("load", () => {
   delAll.addEventListener("click", () => {
     story.value = story.value.charAt((story.length = -1));
   });
+
+  // Power Key
+
+  power.addEventListener("click", () => {
+      if (!isOff) {
+        isOff = false;
+      power.value = "|Keyboard-OFF|";
+      document.getElementsByTagName("link")[1].remove();
+      }     
+  });    
 
   // Shift In progress
 /* In progress : */
